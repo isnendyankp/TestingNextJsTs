@@ -107,3 +107,32 @@ module.exports = {
 ```
 
 14. install npm i -D @babel/preset-env
+
+15. fix npm install -D jest jest-environment-jsdom @testing-library/react @testing-library/jest-dom
+
+16. npm init jest@latest
+
+17. setting jest.config.js into jest.config.ts & add this code
+
+```javascript
+import type { Config } from 'jest'
+import nextJest from 'next/jest.js'
+ 
+const createJestConfig = nextJest({
+  // Provide the path to your Next.js app to load next.config.js and .env files in your test environment
+  dir: './',
+})
+ 
+// Add any custom config to be passed to Jest
+const config: Config = {
+  coverageProvider: 'v8',
+  testEnvironment: 'jsdom',
+  // Add more setup options before each test is run
+  // setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+}
+ 
+// createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
+export default createJestConfig(config)
+```
+
+18. npm i -D ts-node
