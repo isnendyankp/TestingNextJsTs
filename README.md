@@ -80,3 +80,15 @@ This project is  learn unit testing with nextjs and typescript.
 ```
 
 10. install npm install --save-dev @babel/preset-typescript
+
+11. cr8 file babel.config.js and add this code
+
+```javascript
+module.exports = {
+  presets: [
+    ['@babel/preset-env', {targets: {node: 'current'}}],
+    '@babel/preset-typescript',
+  ],
+};
+```
+
