@@ -105,3 +105,5 @@ module.exports = {
   ],
 };
 ```
+
+14. install npm i -D @babel/preset-env
