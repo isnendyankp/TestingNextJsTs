@@ -93,3 +93,15 @@ module.exports = {
 ```
 
 12. install npm install --save-dev @babel/preset-typescript @babel/preset-react
+
+13. edit file babel.config.js into this code
+
+```javascript
+module.exports = {
+  presets: [
+    ['@babel/preset-env', {targets: {node: 'current'}}],
+    '@babel/preset-typescript',
+    '@babel/preset-react',
+  ],
+};
+```
