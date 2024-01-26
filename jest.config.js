@@ -3,7 +3,6 @@
     testEnvironment: 'jsdom',
     moduleNameMapper: {
         '^@components/(.*)$': '<rootDir>/src/components/$1',
-         '^@pages//(.*)$': '<rootDir>/src/components/$1'
     }
 }
 
