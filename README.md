@@ -78,3 +78,5 @@ This project is  learn unit testing with nextjs and typescript.
 }
 
 ```
+
+10. install npm install --save-dev @babel/preset-typescript
