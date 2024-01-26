@@ -1,16 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "ES5",
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "CommonJS",
+    "module": "ESNext",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "moduleResolution": "node", // Fix: Change moduleResolution value to "node"
     "paths": {
       "@/*": [
         "./src/*"

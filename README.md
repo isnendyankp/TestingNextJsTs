@@ -136,3 +136,5 @@ export default createJestConfig(config)
 ```
 
 18. npm i -D ts-node
+
+19. npm i --save-dev @types/jest
