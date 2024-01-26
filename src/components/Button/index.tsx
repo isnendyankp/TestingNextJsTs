@@ -21,7 +21,7 @@ const Button = ({ label, className, onClick, variant = 'primary' }: Props) => {
 
     return (
       <button
-        className={`${className} btn overflow-hidden relative w-64 text-white py-4 px-4 rounded-xl font-bold uppercase -- before:block before:absolute before:h-full before:w-full before:bg-red-300 before:left-0 before:top-0 before:-translate-y-full hover:before:translate-y-0 before:transition-transform`}
+        className={`${className} ${style}`}
         onClick={onClick}
       >
         {label}
