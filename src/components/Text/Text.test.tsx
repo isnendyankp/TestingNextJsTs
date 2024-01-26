@@ -10,4 +10,9 @@ describe('Unit test for Text Component', () => {
         const element = screen.getByText('testing text');
         expect(element).toMatchSnapshot();
     });
+
+    test('component should be return text with className', () => {
+        const document = render (<Text className={'testing-class'}>{'testing text'}</Text>);
+        expect(document).toMatchSnapshot();
+    });
 });
