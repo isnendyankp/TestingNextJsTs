@@ -92,3 +92,4 @@ module.exports = {
 };
 ```
 
+12. install npm install --save-dev @babel/preset-typescript @babel/preset-react
