@@ -1,8 +1,19 @@
-# About Project
+# Testing Next.js with TS
 
-This project is  learn unit testing with nextjs and typescript.
+## Project Goals
 
-## Built With
+This project is  learn unit testing with nextjs and typescript. You can see the final project here: . You can also find the original repository here:
+
+## Getting started
+
+1. `npm install`
+2. `npm run dev`
+
+## What I Learned
+
+### Installation Procedure
+
+#### Built With
 
 1. install axios: npm i axios.
 
